@@ -29,6 +29,8 @@
 
 en:
   nav:
+    english: "English"
+    bangla: "Bengali"
     ict: "ICT"
     title: "Ghor"
     home: "Home"
