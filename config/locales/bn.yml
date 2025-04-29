@@ -1,0 +1,45 @@
+bn:
+  nav:
+    ict: "আইসিটি" 
+    title: "ঘর"
+    home: "হোম"
+    about: "আমাদের সম্পর্কে"
+    contact: "যোগাযোগ"
+    resources: "সহায়িকা সমূহ"
+    chapters: "চ্যাপ্টারস"
+    chapter1: "১ম অধ্যায়" 
+    chapter2: "২য়  অধ্যায়" 
+    chapter3: "৩য় অধ্যায়" 
+    chapter4: "৪র্থ অধ্যায়" 
+    chapter5: "৫ম অধ্যায়" 
+    chapter6: "৬ষ্ঠ অধ্যায়" 
+  footer:
+    about:
+      title: "আইসিটি ঘর"
+      description: |
+        এইচএসসি শিক্ষার্থীদের জন্য সম্পূর্ণ আইসিটি অধ্যায়ন সহায়িকা।
+        জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড অনুযায়ী তৈরিকৃত।
+    quick_links:
+      title: "দ্রুত লিংক"
+      home: "হোম"
+      chapters: "অধ্যায়সমূহ"
+      resources: "উপাদান"
+      privacy: "গোপনীয়তা নীতি"
+    syllabus:
+      title: "সিলেবাস"
+      hsc_2025: "এইচএসসি ২০২৫ সিলেবাস"
+      model_questions: "মডেল প্রশ্ন"
+      practical_guides: "প্রায়োগিক নির্দেশিকা"
+      previous_questions: "পূর্ববর্তী প্রশ্ন"
+    contact:
+      title: "যোগাযোগ"
+      address: "১২৩ রোড, ঢাকা"
+      country: "বাংলাদেশ"
+      email: "ইমেইল: info@ictreference.com"
+      phone: "ফোন: +৮৮০ ১২৩৪-৫৬৭৮৯০"
+    copyright: "© ২০২৫ আইসিটি ঘর। সর্বস্বত্ব সংরক্ষিত।"
+    social:
+      facebook: "ফেসবুক"
+      twitter: "টুইটার"
+      youtube: "ইউটিউব"
+

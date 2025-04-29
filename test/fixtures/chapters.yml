@@ -1,0 +1,23 @@
+chapterOne:
+  name: "ICT: World and Bangladesh Perspective"
+  position: 1
+
+chapterTwo:
+  name: "Communication System and Networking"
+  position: 2
+
+chapterThree:
+  name: "Number System and Digital Device"
+  position: 3
+
+chapterFour:
+  name: "Web Design and HTML"
+  position: 4
+
+chapterFive:
+  name: "Programming Language"
+  position: 5
+
+chapterSix:
+  name: "Database Management System"
+  position: 6

@@ -1,0 +1,39 @@
+<div class="flex items-center mx-4 my-2">
+  <!-- Bangla label -->
+  <span class="font-medium mx-2 text-sm">বাংলা</span>
+  
+  <%= form_tag change_locale_path, method: :post, id: "locale_form", class: "inline" do %>
+    <!-- Toggle Switch -->
+    <label class="relative inline-flex items-center cursor-pointer">
+      <% is_english = I18n.locale.to_s == 'en' %>
+      
+      <!-- Hidden checkbox that controls the toggle -->
+      <%= check_box_tag :check, '1', is_english, 
+                      class: "sr-only peer",
+                      onclick: 'toggleLocale(this)' %>
+      
+      <!-- Toggle background -->
+      <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 
+                peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:bg-blue-600 
+                after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white 
+                after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 
+                after:transition-all"></div>
+    </label>
+    
+    <!-- Hidden field that will be submitted -->
+    <%= hidden_field_tag :locale, (is_english ? 'en' : 'bn'), id: 'locale_value' %>
+  <% end %>
+  
+  <!-- English label -->
+  <span class="font-medium mx-2 text-sm">English</span>
+</div>
+
+<script>
+  function toggleLocale(checkbox) {
+    // Set the hidden field value based on checkbox state
+    document.getElementById('locale_value').value = checkbox.checked ? 'en' : 'bn';
+    // Submit the form
+    document.getElementById('locale_form').submit();
+  }
+</script>
+

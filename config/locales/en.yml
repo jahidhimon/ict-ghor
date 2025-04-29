@@ -28,4 +28,47 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  nav:
+    ict: "ICT"
+    title: "Ghor"
+    home: "Home"
+    about: "About Us"
+    contact: "Contact"
+    resources: "Resources"
+    chapters: "Chapters"
+    chapter1: "1st Chapter"
+    chapter2: "2nd Chapter"
+    chapter3: "3rd Chapter"
+    chapter4: "4th Chapter"
+    chapter5: "5th Chapter"
+    chapter6: "6th Chapter"
+  footer:
+    about:
+      title: "ICT Ghor"
+      description: |
+        Comprehensive ICT study resource for HSC students.
+        Aligned with the National Curriculum and Textbook Board.
+    quick_links:
+      title: "Quick Links"
+      home: "Home"
+      chapters: "Chapters"
+      resources: "Resources"
+      privacy: "Privacy Policy"
+    syllabus:
+      title: "Syllabus"
+      hsc_2025: "HSC 2025 Syllabus"
+      model_questions: "Model Questions"
+      practical_guides: "Practical Guides"
+      previous_questions: "Previous Questions"
+    contact:
+      title: "Contact"
+      address: "123 Road, Dhaka"
+      country: "Bangladesh"
+      email: "Email: info@ictreference.com"
+      phone: "Phone: +880 1234-567890"
+    copyright: "© 2025 ICT Ghor. All rights reserved."
+    social:
+      facebook: "Facebook"
+      twitter: "Twitter"
+      youtube: "YouTube"
+
