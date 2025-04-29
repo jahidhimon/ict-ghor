@@ -1,5 +1,7 @@
 bn:
   nav:
+    english: "ইংরেজি"
+    bangla: "বাংলা"
     ict: "আইসিটি" 
     title: "ঘর"
     home: "হোম"

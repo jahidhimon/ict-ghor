@@ -8,7 +8,7 @@ class ChaptersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get show" do
-    get chapter_url(chapters(:chapterOne))
+    get chapter_url(chapters(:chapter_one))
     assert_response :success
     assert_template "show"
   end
