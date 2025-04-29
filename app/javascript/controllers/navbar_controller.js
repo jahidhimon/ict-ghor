@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
-  static targets = ["sidebar", "overlay", "dropdown"];
+  static targets = ["sidebar", "overlay", "dropdown", "tooltip"];
   static values = { transitionDuration: { type: Number, default: 200 } };
 
   toggle() {
@@ -31,5 +31,23 @@ export default class extends Controller {
         this.dropdownTarget.classList.add("hidden");
       }
     }, this.transitionDurationValue);
+  }
+
+  tooltipShow(event) {
+    const tooltip = this.tooltipTarget;
+    const name = event.currentTarget.dataset.tooltip;
+
+    const rect = event.currentTarget.getBoundingClientRect();
+    const x = rect.left + window.scrollX + 120;
+    const y = rect.top + window.scrollY;
+
+    tooltip.classList.remove("hidden");
+    tooltip.style.left = `${x}px`;
+    tooltip.style.top = `${y}px`;
+    tooltip.textContent = name;
+  }
+
+  tooltipHide() {
+    this.tooltipTarget.classList.add("hidden");
   }
 }
