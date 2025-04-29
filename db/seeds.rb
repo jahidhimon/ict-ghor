@@ -3,7 +3,7 @@ Chapter.destroy_all
 
 # Create chapters with translations
 chapters = [
-  { 
+  {
     position: 1,
     translations: [
       { locale: 'en', name: "ICT: World and Bangladesh Perspective" },
