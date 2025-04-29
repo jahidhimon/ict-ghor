@@ -1,0 +1,61 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+translation_one_en:
+  chapter: chapter_one
+  locale: en
+  name: "ICT: World and Bangladesh Perspective"
+
+translation_one_bn:
+  chapter: chapter_one
+  locale: bn
+  name: "আইসিটি: বৈশ্বিক ও বাংলাদেশ প্রেক্ষাপট"
+
+translation_two_en:
+  chapter: chapter_two
+  locale: en
+  name: "Communication System and Networking"
+
+translation_two_bn:
+  chapter: chapter_two
+  locale: bn
+  name: "যোগাযোগ ব্যবস্থা ও নেটওয়ার্কিং"
+
+translation_three_en:
+  chapter: chapter_three
+  locale: en
+  name: "Number System and Digital Device"
+
+translation_three_bn:
+  chapter: chapter_three
+  locale: bn
+  name: "সংখ্যা পদ্ধতি ও ডিজিটাল ডিভাইস"
+
+translation_four_en:
+  chapter: chapter_four
+  locale: en
+  name: "Web Design and HTML"
+
+translation_four_bn:
+  chapter: chapter_four
+  locale: bn
+  name: "ওয়েব ডিজাইন ও এইচটিএমএল"
+
+translation_five_en:
+  chapter: chapter_five
+  locale: en
+  name: "Programming Language"
+
+translation_five_bn:
+  chapter: chapter_five
+  locale: bn
+  name: "প্রোগ্রামিং ভাষা"
+
+translation_six_en:
+  chapter: chapter_six
+  locale: en
+  name: "Database Management System"
+
+translation_six_bn:
+  chapter: chapter_six
+  locale: bn
+  name: "ডাটাবেস ম্যানেজমেন্ট সিস্টেম"

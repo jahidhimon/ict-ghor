@@ -1,6 +1,6 @@
 <div class="flex items-center mx-4 my-2">
   <!-- Bangla label -->
-  <span class="font-medium mx-2 text-sm">বাংলা</span>
+  <span class="font-medium mx-2 text-sm"><%= t("nav.bangla") %></span>
   
   <%= form_tag change_locale_path, method: :post, id: "locale_form", class: "inline" do %>
     <!-- Toggle Switch -->
@@ -13,10 +13,10 @@
                       onclick: 'toggleLocale(this)' %>
       
       <!-- Toggle background -->
-      <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 
+      <div class="w-11 h-6 bg-zinc-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 
                 peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:bg-blue-600 
-                after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white 
-                after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 
+                after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-green-400 
+                after:border-zinc-900 after:border after:rounded-full after:h-5 after:w-5 
                 after:transition-all"></div>
     </label>
     
@@ -25,7 +25,7 @@
   <% end %>
   
   <!-- English label -->
-  <span class="font-medium mx-2 text-sm">English</span>
+  <span class="font-medium mx-2 text-sm"><%= t("nav.english") %></span>
 </div>
 
 <script>

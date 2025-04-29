@@ -10,15 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_29_144345) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_29_215635) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
+  create_table "chapter_translations", force: :cascade do |t|
+    t.string "locale"
+    t.string "name"
+    t.bigint "chapter_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["chapter_id"], name: "index_chapter_translations_on_chapter_id"
+  end
+
   create_table "chapters", force: :cascade do |t|
-    t.string "name", null: false
     t.integer "position", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "slug"
   end
+
+  add_foreign_key "chapter_translations", "chapters"
 end
