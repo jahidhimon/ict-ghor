@@ -1,2 +1,161 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<main class="bg-zinc-900 text-zinc-100">
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-4 py-20 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+      <%= t("about.master.title") %>
+    </h1>
+    <p class="text-xl md:text-2xl text-zinc-300 mb-8 max-w-3xl mx-auto">
+      <%= t("about.master.subtitle") %>
+    </p>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-12">
+      <div class="bg-zinc-800 p-8 rounded-xl border-2 border-blue-500">
+        <div class="w-16 h-16 bg-blue-900/30 rounded-lg mb-6 flex items-center justify-center">
+          <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4"><%= t("about.mission.title") %></h3>
+        <p class="text-zinc-400"><%= t("about.mission.description") %></p>
+      </div>
+
+      <div class="bg-zinc-800 p-8 rounded-xl border-2 border-green-500">
+        <div class="w-16 h-16 bg-green-900/30 rounded-lg mb-6 flex items-center justify-center">
+          <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4"><%= t("about.vision.title") %></h3>
+        <p class="text-zinc-400"><%= t("about.vision.description") %></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="bg-zinc-800/50 py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="rounded-xl overflow-hidden border-2 border-zinc-700">
+          <!-- Placeholder for team image -->
+          <div class="bg-zinc-900 aspect-video flex items-center justify-center">
+            <span class="text-zinc-600">Team Image</span>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold mb-6"><%= t("about.story.title") %></h2>
+          <p class="text-zinc-400 mb-6"><%= t("about.story.paragraph1") %></p>
+          <p class="text-zinc-400 mb-6"><%= t("about.story.paragraph2") %></p>
+          <p class="text-zinc-400"><%= t("about.story.paragraph3") %></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Makes Us Different -->
+  <section class="max-w-7xl mx-auto px-4 py-20">
+    <h2 class="text-3xl font-bold mb-12 text-center"><%= t("about.difference.title") %></h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-zinc-800 p-6 rounded-xl hover:border-blue-500 border-2 border-zinc-700 transition-all">
+        <div class="w-12 h-12 bg-blue-900/30 rounded-lg mb-4 flex items-center justify-center">
+          <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-2"><%= t("about.difference.curriculum.title") %></h3>
+        <p class="text-zinc-400"><%= t("about.difference.curriculum.description") %></p>
+      </div>
+
+      <div class="bg-zinc-800 p-6 rounded-xl hover:border-green-500 border-2 border-zinc-700 transition-all">
+        <div class="w-12 h-12 bg-green-900/30 rounded-lg mb-4 flex items-center justify-center">
+          <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-2"><%= t("about.difference.interactive.title") %></h3>
+        <p class="text-zinc-400"><%= t("about.difference.interactive.description") %></p>
+      </div>
+
+      <div class="bg-zinc-800 p-6 rounded-xl hover:border-purple-500 border-2 border-zinc-700 transition-all">
+        <div class="w-12 h-12 bg-purple-900/30 rounded-lg mb-4 flex items-center justify-center">
+          <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-2"><%= t("about.difference.community.title") %></h3>
+        <p class="text-zinc-400"><%= t("about.difference.community.description") %></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="bg-zinc-800/50 py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <p class="text-4xl md:text-5xl font-bold text-blue-400 mb-2">50,000+</p>
+          <p class="text-zinc-400"><%= t("about.stats.students") %></p>
+        </div>
+        <div>
+          <p class="text-4xl md:text-5xl font-bold text-green-400 mb-2">100+</p>
+          <p class="text-zinc-400"><%= t("about.stats.animations") %></p>
+        </div>
+        <div>
+          <p class="text-4xl md:text-5xl font-bold text-purple-400 mb-2">500+</p>
+          <p class="text-zinc-400"><%= t("about.stats.questions") %></p>
+        </div>
+        <div>
+          <p class="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">95%</p>
+          <p class="text-zinc-400"><%= t("about.stats.success") %></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team (Optional) -->
+  <section class="max-w-7xl mx-auto px-4 py-20">
+    <h2 class="text-3xl font-bold mb-12 text-center"><%= t("about.team.title") %></h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-zinc-800 p-6 rounded-xl text-center">
+        <div class="w-24 h-24 bg-zinc-700 rounded-full mx-auto mb-4 flex items-center justify-center">
+          <span class="text-zinc-500">Photo</span>
+        </div>
+        <h3 class="text-xl font-bold mb-1"><%= t("about.team.member1.name") %></h3>
+        <p class="text-blue-400 mb-4"><%= t("about.team.member1.role") %></p>
+        <p class="text-zinc-400"><%= t("about.team.member1.bio") %></p>
+      </div>
+
+      <div class="bg-zinc-800 p-6 rounded-xl text-center">
+        <div class="w-24 h-24 bg-zinc-700 rounded-full mx-auto mb-4 flex items-center justify-center">
+          <span class="text-zinc-500">Photo</span>
+        </div>
+        <h3 class="text-xl font-bold mb-1"><%= t("about.team.member2.name") %></h3>
+        <p class="text-green-400 mb-4"><%= t("about.team.member2.role") %></p>
+        <p class="text-zinc-400"><%= t("about.team.member2.bio") %></p>
+      </div>
+
+      <div class="bg-zinc-800 p-6 rounded-xl text-center">
+        <div class="w-24 h-24 bg-zinc-700 rounded-full mx-auto mb-4 flex items-center justify-center">
+          <span class="text-zinc-500">Photo</span>
+        </div>
+        <h3 class="text-xl font-bold mb-1"><%= t("about.team.member3.name") %></h3>
+        <p class="text-purple-400 mb-4"><%= t("about.team.member3.role") %></p>
+        <p class="text-zinc-400"><%= t("about.team.member3.bio") %></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="max-w-7xl mx-auto px-4 py-20 text-center">
+    <div class="bg-gradient-to-br from-zinc-800 to-zinc-900 rounded-2xl p-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6"><%= t("about.join.title") %></h2>
+      <p class="text-zinc-300 mb-8 max-w-2xl mx-auto"><%= t("about.join.description") %></p>
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <button class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition-colors"><%= t("about.join.buttons.first") %></button>
+        <button class="border-2 border-zinc-600 hover:border-blue-500 px-8 py-4 rounded-lg font-semibold transition-colors"><%= t("about.join.buttons.second") %></button>
+      </div>
+    </div>
+  </section>
+</main>

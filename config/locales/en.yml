@@ -57,6 +57,99 @@ en:
       buttons:
         first: "Start Learning Free"
         second: "Explore Chapters"
+  about:
+    master:
+      title: "About Us"
+      subtitle: "A learning platform dedicated to empowering HSC students with interactive ICT education aligned with NCTB curriculum."
+    mission:
+      title: "Our Mission"
+      description: "To make ICT education accessible, engaging, and effective for all HSC students in Bangladesh through innovative digital learning tools and comprehensive curriculum coverage."
+    vision:
+      title: "Our Vision"
+      description: "To become the leading digital ICT education platform in Bangladesh, helping students achieve excellence in their HSC examinations and build strong foundations for future technology careers."
+    story:
+      title: "Our Story"
+      paragraph1: "ICT Ghor began in 2023 when a group of passionate ICT educators and developers recognized the challenges students face in understanding complex ICT concepts through traditional learning methods."
+      paragraph2: "Leveraging the power of interactive animations, comprehensive notes, and smart practice systems, we created a platform that transforms how students learn ICT - making complex concepts simple and engaging."
+      paragraph3: "Today, over 50,000 students across Bangladesh use ICT Ghor to excel in their HSC ICT examinations and develop practical technology skills for their future."
+    difference:
+      title: "What Makes ICT Ghor Different"
+      curriculum:
+        title: "NCTB-Aligned Content"
+        description: "Every lesson, animation, and practice question is perfectly aligned with the latest NCTB curriculum and HSC examination patterns."
+      interactive:
+        title: "Learn by Doing"
+        description: "Our interactive simulations and animations transform passive learning into active exploration, helping students truly understand concepts, not just memorize them."
+      community:
+        title: "Supportive Community"
+        description: "Join thousands of fellow students and experienced teachers who share knowledge, answer questions, and provide support throughout your learning journey."
+    stats:
+      students: "Active Students"
+      animations: "Interactive Animations"
+      questions: "Practice Questions"
+      success: "Success Rate"
+    team:
+      title: "Meet Our Team"
+      member1:
+        name: "Rahul Ahmed"
+        role: "Founder & Lead Developer"
+        bio: "HSC ICT teacher with 10+ years of experience who envisioned transforming ICT education through interactive learning."
+      member2:
+        name: "Nusrat Rahman"
+        role: "Content Director"
+        bio: "Educational content specialist with expertise in creating engaging animations and comprehensive study materials."
+      member3:
+        name: "Adnan Hossain"
+        role: "Technical Lead"
+        bio: "Computer Science graduate passionate about making technology education accessible to all Bangladeshi students."
+    join:
+      title: "Ready to Transform Your ICT Learning?"
+      description: "Join our community of 50,000+ students who have already discovered the power of interactive ICT education."
+      buttons:
+        first: "Create Free Account"
+        second: "Explore Chapters"
+  contact:
+    master:
+      title: "Contact"
+      title_highlight: "Us"
+      subtitle: "Have questions or need assistance? We're here to help you with any inquiries about ICT Ghor."
+    cards:
+      email:
+        title: "Email Us"
+        description: "For general inquiries, support questions, or feedback, please reach out to our team via email."
+      social:
+        title: "Connect with Us"
+        description: "Follow us on social media for updates, tips, and to join our growing community of learners."
+      address:
+        title: "Visit Our Office"
+        description: "Feel free to visit our office for in-person assistance or to learn more about our services."
+    form:
+      title: "Send Us a Message"
+      name_label: "Your Name"
+      name_placeholder: "Enter your full name"  
+      email_label: "Email Address"
+      email_placeholder: "Enter your email address"
+      subject_label: "Subject"
+      subject_placeholder: "What is your message about?"
+      message_label: "Message"
+      message_placeholder: "Type your message here..."
+      submit_button: "Send Message"
+    faq:
+      title: "Frequently Asked Questions"
+      question1: "How quickly will I receive a response?"
+      answer1: "We typically respond to all inquiries within 24 hours during business days. For urgent matters, please indicate in your subject line."
+      question2: "Can I get technical support through this contact form?"
+      answer2: "Yes, our technical team reviews all support requests sent through this form. For faster assistance, please include detailed information about your issue."
+      question3: "Do you offer in-person consultation for schools?"
+      answer3: "Absolutely! We provide in-person consultations for educational institutions interested in implementing ICT Ghor. Please mention this in your message."
+      question4: "How can I report a technical issue or bug?"
+      answer4: "You can report technical issues through this form or email us directly. Please include details like your device, browser, and steps to reproduce the issue."
+    join:
+      title: "Ready to Transform Your ICT Learning?"
+      description: "Join our community of 50,000+ students who have already discovered the power of interactive ICT education."
+      buttons:
+        first: "Create Free Account"
+        second: "Explore Chapters"
   nav:
     english: "English"
     bangla: "Bengali"
