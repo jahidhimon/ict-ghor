@@ -38,7 +38,7 @@ export default class extends Controller {
     const name = event.currentTarget.dataset.tooltip;
 
     const rect = event.currentTarget.getBoundingClientRect();
-    const x = rect.left + window.scrollX + 120;
+    const x = rect.left + window.scrollX + 130;
     const y = rect.top + window.scrollY;
 
     tooltip.classList.remove("hidden");

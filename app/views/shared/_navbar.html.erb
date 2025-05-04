@@ -21,7 +21,7 @@
             </svg>
           </button>
           <div data-navbar-target="dropdown"
-            class="absolute hidden opacity-0 scale-95 transition-all duration-200 ease-out bg-zinc-800 shadow-lg rounded-lg w-28">
+            class="absolute hidden opacity-0 scale-95 transition-all duration-200 ease-out bg-zinc-800 shadow-lg rounded-lg w-30">
             <%- Chapter.includes(:translations).all.each do |chapter| %>
               <%= link_to t("nav.chapter#{chapter.position}"), chapter_path(chapter), class: "block px-3 py-2 hover:bg-zinc-700 hover:text-blue-400 text-center first:rounded-t-lg last:rounded-b-lg",
               data: { action: "mouseover->navbar#tooltipShow mouseout->navbar#tooltipHide",
