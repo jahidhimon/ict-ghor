@@ -2,16 +2,16 @@
   <!-- Hero Section -->
   <section class="max-w-7xl mx-auto px-4 py-20 text-center">
     <h1 class="text-4xl md:text-6xl font-bold mb-6">
-      Master HSC ICT with
+      <%= t("home.master.title") %>
       <span class="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
-        Interactive Learning
+        <%= t("home.master.title_highlight") %>
       </span>
     </h1>
     <p class="text-xl md:text-2xl text-zinc-300 mb-8 max-w-3xl mx-auto">
-    Transform your ICT preparation with animated lessons, chapter-wise notes, and smart practice systems for Free.
+      <%= t("home.master.subtitle") %>
     </p>
     <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 cursor-pointer">
-      Start Learning Free
+      <%= t("home.master.button") %>
     </button>
   </section>
 
@@ -24,10 +24,8 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
           </svg>
         </div>
-        <h3 class="text-2xl font-bold mb-4">Chapter-wise Digital Notes</h3>
-        <p class="text-zinc-400">
-        Comprehensive notes covering all NCTB syllabus topics with diagrams, flowcharts, and real-life examples.
-        </p>
+        <h3 class="text-2xl font-bold mb-4"><%= t("home.cards.first.title") %></h3>
+        <p class="text-zinc-400"><%= t("home.cards.first.description") %></p>
       </div>
 
       <div class="bg-zinc-800 p-8 rounded-xl hover:border-green-500 border-2 border-zinc-700 transition-all">
@@ -36,10 +34,8 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
         </div>
-        <h3 class="text-2xl font-bold mb-4">Interactive Animations</h3>
-        <p class="text-zinc-400">
-        Visualize complex concepts through engaging animations - from networking protocols to database operations made simple.
-        </p>
+        <h3 class="text-2xl font-bold mb-4"><%= t("home.cards.second.title") %></h3>
+        <p class="text-zinc-400"><%= t("home.cards.second.description") %></p>
       </div>
 
       <div class="bg-zinc-800 p-8 rounded-xl hover:border-purple-500 border-2 border-zinc-700 transition-all">
@@ -48,31 +44,9 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
           </svg>
         </div>
-        <h3 class="text-2xl font-bold mb-4">Smart Practice System</h3>
-        <p class="text-zinc-400">
-        Chapter-wise quizzes, previous year questions, and AI-powered mock tests with instant performance analysis.
-        </p>
+        <h3 class="text-2xl font-bold mb-4"><%= t("home.cards.third.title") %></h3>
+        <p class="text-zinc-400"><%= t("home.cards.third.description") %></p>
       </div>
-    </div>
-  </section>
-
-  <!-- Syllabus Preview -->
-  <section class="max-w-7xl mx-auto px-4 py-16">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Complete HSC ICT Coverage</h2>
-      <p class="text-zinc-400 max-w-2xl mx-auto">
-      Structured learning path following NCTB curriculum with additional practical implementations
-      </p>
-    </div>
-
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <!-- Repeat for all chapters -->
-      <div class="bg-zinc-800 p-6 rounded-lg hover:bg-zinc-700 transition-colors">
-        <div class="text-blue-400 font-bold mb-2">Chapter 1</div>
-        <h3 class="font-semibold">Information Systems</h3>
-        <p class="text-sm text-zinc-400 mt-2">4 Lessons • 2 Animations</p>
-      </div>
-      <!-- Add 11 more chapters following same pattern -->
     </div>
   </section>
 
@@ -87,21 +61,21 @@
           </div>
         </div>
         <div>
-          <h2 class="text-3xl font-bold mb-6">Learn Through Play</h2>
+          <h2 class="text-3xl font-bold mb-6"><%= t("home.animation_preview.title") %></h2>
           <p class="text-zinc-400 mb-8">
-          Our interactive simulations let you experiment with ICT concepts:
+          <span><%= t("home.animation_preview.description") %></span>
           <ul class="space-y-4 text-zinc-300">
             <li class="flex items-center">
               <div class="w-6 h-6 bg-blue-500 rounded-full mr-3 flex items-center justify-center">✓</div>
-              Build virtual networks
+              <%= t("home.animation_preview.bullet_points.first") %>
             </li>
             <li class="flex items-center">
               <div class="w-6 h-6 bg-green-500 rounded-full mr-3 flex items-center justify-center">✓</div>
-              Program logic structures visually
+              <%= t("home.animation_preview.bullet_points.second") %>
             </li>
             <li class="flex items-center">
               <div class="w-6 h-6 bg-purple-500 rounded-full mr-3 flex items-center justify-center">✓</div>
-              Database design sandbox
+              <%= t("home.animation_preview.bullet_points.third") %>
             </li>
           </ul>
           </p>
@@ -113,17 +87,11 @@
   <!-- CTA Section -->
   <section class="max-w-7xl mx-auto px-4 py-20 text-center">
     <div class="bg-gradient-to-br from-zinc-800 to-zinc-900 rounded-2xl p-12">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">Start Your ICT Journey Today</h2>
-      <p class="text-zinc-300 mb-8 max-w-2xl mx-auto">
-      Join 50,000+ HSC students from Bangladesh who transformed their ICT preparation with ICT Ghor
-      </p>
+      <h2 class="text-3xl md:text-4xl font-bold mb-6"><%= t("home.ict_journey.title") %></h2>
+      <p class="text-zinc-300 mb-8 max-w-2xl mx-auto"><%= t("home.ict_journey.description") %></p>
       <div class="flex flex-col md:flex-row justify-center gap-4">
-        <button class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition-colors">
-          Create Free Account
-        </button>
-        <button class="border-2 border-zinc-600 hover:border-blue-500 px-8 py-4 rounded-lg font-semibold transition-colors">
-          Explore Features
-        </button>
+        <button class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition-colors"><%= t("home.ict_journey.buttons.first") %></button>
+        <button class="border-2 border-zinc-600 hover:border-blue-500 px-8 py-4 rounded-lg font-semibold transition-colors"><%= t("home.ict_journey.buttons.second") %></button>
       </div>
     </div>
   </section>
