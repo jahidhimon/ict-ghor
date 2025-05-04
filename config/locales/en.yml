@@ -28,6 +28,35 @@
 #       enabled: "ON"
 
 en:
+  home:
+    master:
+      title: "Master HSC ICT with"
+      title_highlight: "Interactive Learning"
+      subtitle: "Transform your ICT Preparation with animated lessons, chapter-wise notes, and smart practice systems for free."
+      button: "Start Learning Free"
+    cards:
+      first:
+        title: "Chapter-wise Digital Notes"
+        description: "Comprehensive notes covering all NCTB syllabus topics with diagrams, flowcharts, and real-life examples."
+      second:
+        title: "Interactive Animations"
+        description: "Visualize complex concepts through engaging animations - from networking protocols to database operations made simple."
+      third:
+        title: "Smart Practice System"
+        description: "Chapter-wise quizzes, previous year questions, and AI-powered mock tests with instant performance analysis."
+    animation_preview:
+      title: "Learn Through Play"
+      description: "Our interactive simulations let you experiment with ICT concepts"
+      bullet_points:
+        first: "Practice HTML & CSS for web development"
+        second: "Solve database queries with SQL exercises"
+        third: "Explore algorithm visualization step-by-step"
+    ict_journey:
+      title: "Start Your ICT Journey Today"
+      description: "Join Thousands of HSC students from Bangladesh who transformed their ICT preparation with ICT-Ghor"
+      buttons:
+        first: "Start Learning Free"
+        second: "Explore Chapters"
   nav:
     english: "English"
     bangla: "Bengali"
