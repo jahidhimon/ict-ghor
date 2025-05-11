@@ -23,6 +23,7 @@ gem "kamal", require: false
 gem "thruster", require: false
 
 gem "image_processing", "~> 1.2"
+gem "figaro", "~> 1.2"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
@@ -34,6 +35,8 @@ end
 
 group :development do
   gem "web-console"
+  gem "erb_lint", require: false
+  gem "foreman", "~> 0.88.1"
 end
 
 group :test do
@@ -42,6 +45,3 @@ group :test do
   gem "simplecov", require: false
   gem "rails-controller-testing"
 end
-
-gem "figaro", "~> 1.2"
-gem "erb_lint", require: false

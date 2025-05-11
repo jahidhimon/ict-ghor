@@ -137,6 +137,13 @@ bn:
     chapter4: "৪র্থ অধ্যায়" 
     chapter5: "৫ম অধ্যায়" 
     chapter6: "৬ষ্ঠ অধ্যায়" 
+  topics:
+    index:
+      estimated_time: "%{count} মিনিট"
+      start_topic: "শুরু করুন"
+      navigation:
+        all_chapters: "সকল অধ্যায়"
+        next_chapter: "পরের অধ্যায়"
   footer:
     about:
       title: "আইসিটি ঘর"

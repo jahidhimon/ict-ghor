@@ -1,0 +1,115 @@
+<div class="bg-zinc-900 text-zinc-100 min-h-screen">
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-4 py-16 text-center">
+    <h1 class="text-3xl md:text-5xl font-bold mb-4">
+      <%= @chapter.translated_name %>
+    </h1>
+  </section>
+
+  <!-- Topics List -->
+  <section class="max-w-7xl mx-auto px-4 py-8 mb-16">
+    <% if @topics.any? %>
+      <div class="grid gap-6">
+        <% @topics.each_with_index do |topic, index| %>
+          <div class="bg-zinc-800 rounded-xl w-5xl border-2 border-zinc-700 hover:border-blue-500 transition-all overflow-hidden">
+            <div class="flex flex-col md:flex-row">
+              <!-- Topic Number Indicator -->
+              <div class="bg-gradient-to-br from-zinc-800 to-zinc-900 md:w-24 p-6 flex items-center justify-center">
+                <span class="text-4xl font-bold text-blue-400"><%= index + 1 %></span>
+              </div>
+
+              <!-- Topic Content -->
+              <div class="p-6 md:p-8 flex-1">
+                <div class="flex flex-wrap items-start justify-between gap-4">
+                  <div>
+                    <h2 class="text-2xl font-bold mb-2">
+                      <%= topic.translated_name %>
+                    </h2>
+                    <p class="text-zinc-400 mb-4 line-clamp-2">
+                      <%= topic.translated_description.to_s.truncate_words(10) %>
+                    </p>
+                  </div>
+
+                  <!-- Admin Controls -->
+                    <div class="flex space-x-2">
+                      <%= link_to edit_chapter_topic_path(@chapter, topic), class: "p-2 bg-zinc-700 hover:bg-zinc-600 rounded-lg transition-colors" do %>
+                        <svg class="w-5 h-5 text-zinc-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                        </svg>
+                      <% end %>
+                      <%= button_to chapter_topic_path(@chapter, topic), method: :delete, class: "p-2 bg-zinc-700 hover:bg-red-600 rounded-lg transition-colors", data: { turbo_confirm: t("topics.index.confirm_delete") } do %>
+                        <svg class="w-5 h-5 text-zinc-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
+                      <% end %>
+                    </div>
+                </div>
+
+                <!-- Topic Metadata and Action Button -->
+                <div class="flex flex-wrap items-center justify-between mt-4 pt-4 border-t border-zinc-700">
+                  <div class="flex items-center text-zinc-400 text-sm">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <%= t("topics.index.estimated_time", count: rand(15..45)) %>
+                  </div>
+                  <%= link_to chapter_topic_path(@chapter, topic), class: "bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition-colors flex items-center" do %>
+                    <%= t("topics.index.start_topic") %>
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% else %>
+      <div class="bg-zinc-800 rounded-xl p-12 text-center">
+        <svg class="w-16 h-16 text-zinc-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        </svg>
+        <h3 class="text-xl font-semibold mb-2"><%= t("topics.index.no_topics_title") %></h3>
+        <p class="text-zinc-400 mb-6"><%= t("topics.index.no_topics_message") %></p>
+          <%= link_to new_chapter_topic_path(@chapter), class: "inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all" do %>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+              <%= t("topics.index.create_first_topic") %>
+            </div>
+        <% end %>
+      </div>
+    <% end %>
+  </section>
+
+  <!-- Navigation and Progress -->
+  <section class="max-w-7xl mx-auto px-4 pb-16">
+    <div class="bg-gradient-to-br from-zinc-800 to-zinc-900 rounded-2xl p-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div>
+          <h3 class="text-2xl font-bold mb-2"><%= t("topics.index.navigation.title") %></h3>
+          <p class="text-zinc-400"><%= t("topics.index.navigation.description") %></p>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <%= link_to chapters_path, class: "border-2 border-zinc-600 hover:border-blue-500 px-5 py-2 rounded-lg font-medium transition-colors flex items-center" do %>
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            <%= t("topics.index.navigation.all_chapters") %>
+          <% end %>
+
+          <% if Chapter.second.present? %>
+            <%= link_to chapter_topics_path(Chapter.second), class: "bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition-colors flex items-center" do %>
+              <%= t("topics.index.navigation.next_chapter") %>
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

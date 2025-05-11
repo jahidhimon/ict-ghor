@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :chapters, only: [ :index, :show ]
+  resources :chapters, only: [ :index, :show ] do
+    resources :topics
+  end
 
   get "/about" => "pages#about", as: :about
   get "/contact" => "pages#contact", as: :contact

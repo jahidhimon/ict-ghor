@@ -1,5 +1,6 @@
 class Chapter < ApplicationRecord
   has_many :translations, class_name: "ChapterTranslation", dependent: :destroy
+  has_many :topics, dependent: :destroy
 
   def translated_name
     Rails.cache.fetch("chapter_name/#{id}/#{I18n.locale}") do
