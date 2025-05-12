@@ -23,7 +23,6 @@ gem "kamal", require: false
 gem "thruster", require: false
 
 gem "image_processing", "~> 1.2"
-gem "figaro", "~> 1.2"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
@@ -31,7 +30,6 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
   gem "rack-mini-profiler", require: false
 end
-
 group :development do
   gem "web-console"
   gem "erb_lint", require: false
@@ -44,3 +42,5 @@ group :test do
   gem "simplecov", require: false
   gem "rails-controller-testing"
 end
+
+gem "aws-sdk-s3", "~> 1.186", require: false
