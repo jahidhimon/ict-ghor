@@ -43,4 +43,4 @@ group :test do
   gem "rails-controller-testing"
 end
 
-gem "aws-sdk-s3", "~> 1.188", require: false
+gem "aws-sdk-s3", "~> 1.191", require: false
